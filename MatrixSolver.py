@@ -13,6 +13,7 @@ for rowID, row in enumerate(Matrixes):
           for rowID2, row2 in enumerate(Matrixes):
                if (row2[rowID] != 0) and (row[rowID2] != 0):
                     Matrixes[rowID], Matrixes[rowID2] = Matrixes[rowID2], Matrixes[rowID]
+                    break
             
 print(*Matrixes, sep="\n")
 # Iterate over all spots by going from column to column
